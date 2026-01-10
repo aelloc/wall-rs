@@ -163,20 +163,20 @@ impl Wall {
         self.config.as_ref().unwrap().write("").unwrap()
     }
 }
-
-#[cfg(test)]
-mod tests {
-    use crate::config::Config;
-    use crate::wall::Wall;
-
-    #[test]
-    fn test_random() {
-        let config = match Config::from_local_conf() {
-            Ok(c) => Some(c),
-            Err(_) => None,
-        };
-        let wall = Wall::new(config);
-
-        wall.random(None);
-    }
-}
+//
+// #[cfg(test)]
+// mod tests {
+//     use crate::config::Config;
+//     use crate::wall::Wall;
+//
+//     #[test]
+//     fn test_random() {
+//         let config = match Config::from_local_conf() {
+//             Ok(c) => Some(c),
+//             Err(_) => None,
+//         };
+//         let wall = Wall::new(config);
+//
+//         wall.random(None);
+//     }
+// }

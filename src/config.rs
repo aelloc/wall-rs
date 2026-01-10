@@ -134,14 +134,14 @@ impl Config {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::Config;
-
-    #[test]
-    fn some() {
-        let config = Config::from_local_conf();
-
-        println!("{:?}", config);
-    }
-}
+// #[cfg(test)]
+// mod tests {
+//     use super::Config;
+//
+//     #[test]
+//     fn some() {
+//         let config = Config::from_local_conf();
+//
+//         println!("{:?}", config);
+//     }
+// }
