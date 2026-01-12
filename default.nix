@@ -2,6 +2,7 @@
   rustPlatform,
   pkg-config,
   openssl,
+  swaybg
 }:
 rustPlatform.buildRustPackage {
   name = "wall-rs";
@@ -9,7 +10,7 @@ rustPlatform.buildRustPackage {
 
   nativeBuildInputs = [pkg-config];
 
-  buildInputs = [openssl];
+  buildInputs = [openssl swaybg];
 
   cargoLock.lockFile = ./Cargo.lock;
 }

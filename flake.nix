@@ -23,6 +23,8 @@
 
         # system deps
         openssl
+        swaybg
+        wlroots_0_19
       ];
 
       env.RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
