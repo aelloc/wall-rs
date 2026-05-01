@@ -38,7 +38,7 @@ impl Wall {
                 eprintln!("Well, you passed wrong path");
                 exit(1);
             }
-        };        
+        };
 
         if wallpaper::set_from_path(path).is_ok() {
             println!("Voila!");
